@@ -1,0 +1,5 @@
+23. How would you recover a branch that has already pushed changes in the central repository but has been accidentally deleted from every team member’s local machines?
+We can recover this by checking out the latest commit of this branch in the reflog and then checking it out as a new branch.
+
+24. Can you tell something about git reflog?
+This command tracks every single change made in the repository references (that can be branches or tags) and also maintains the branches/tags log history that was either created locally or checked out. Reference logs such as the commit snapshot of when the branch was created or cloned, checked-out, renamed, or any commits made on the branch are maintained by Git and listed by the ‘reflog’ command.
