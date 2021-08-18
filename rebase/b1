@@ -1,0 +1,8 @@
+25. What consists of a commit object?
+A commit object consists of the following components:
+
+A set of files that represents the state of a project at a given point in time.
+Reference to parent commit objects.
+A 40 character string termed as SHA-1 name uniquely identifies the commit object.
+26. Explain the levels in git config and how can you configure values using them?
+In order to make git work, it uses a set of configurations that are pre-defined by default by means of configuration files (or config files). We can change the default behavior of git by just modifying these files which are basically text files. In order to do this, it is important to understand how git identifies these files. It does so by following the below steps:
