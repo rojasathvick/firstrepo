@@ -1,0 +1,2 @@
+22. What has to be run to squash multiple commits (last N) into a single commit?
+Squashing multiple commits to a single one overwrites the history which is why it is recommended to be done using full caution. This step can be done by running the command: git rebase -i HEAD~{{N}} where {{N}} represents the number of commits needed to be squashed
