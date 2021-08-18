@@ -1,0 +1,8 @@
+27. What is a detached HEAD and what causes this and how to avoid this?
+Detached HEAD indicates that the currently checked-out repository is not a local branch. This can be caused by the following scenarios:
+
+When a branch is a read-only branch and we try to create a commit to that branch, then the commits can be termed as “free-floating” commits not connected to any branch. They would be in a detached state.
+When we checkout a tag or a specific commit and then we try to perform a new commit, then again the commits would not be connected to any branch. When we now try to checkout a branch, these new commits would be automatically placed at the top.
+
+In order to ensure that detached state doesn't happen, =instead of checking out commit/tag, we can create a branch emanating from that commit and then we can switch to that newly created branch by using the command: git checkout -b <<new_branch_name>>. This ensures that a new branch is checkout out and not a commit/tag thereby ensuring that a detached state wouldn't happen.
+28. What does git annotate comman
